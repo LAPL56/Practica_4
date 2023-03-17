@@ -47,7 +47,6 @@ public class ArtekArrays {
         } else {
             System.out.println("\nEl arreglo está vacío");
         }
-
         return average;
     }
     //Método que recibe como argumento un array de enteros y regresa la mediana
@@ -179,6 +178,19 @@ public class ArtekArrays {
         }
         System.out.println("]");
         return numbers;
+    }
+    //Método que recibe como argumento un array de enteros y selecciona solo los número en
+    // posiciones cuyos índices tienen un valor impar
+    public int[] ImparPositionNumber(int[] Numbers) {
+        int[] result = new int[(Numbers.length + 1) / 2]; // tamaño del arreglo de resultados
+
+        for (int i = 1; i < Numbers.length; i += 2) {
+            result[(i - 1) / 2] = Numbers[i]; // agregar el valor de la posición impar al arreglo de resultados
+        }
+
+        System.out.println("\nLos elementos que se encuentran en posiciones 'impares' son: " + Arrays.toString(result)); // imprimir el arreglo de resultados con corchetes en los extremos
+
+        return result;
     }
     //Método que recibe como argumento un array de enteros y selecciona solo los número en
     // posiciones cuyos índices tienen un valor par

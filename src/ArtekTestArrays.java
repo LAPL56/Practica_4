@@ -26,6 +26,8 @@ public class ArtekTestArrays {
 
                     Arrays.ImparNumbers(numbers);
 
+                    Arrays.ImparPositionNumber(numbers);
+
                     Arrays.ParPositionNumber(numbers);
                     break;
                 case 1:
